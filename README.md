@@ -61,6 +61,8 @@ D SELECT * FROM parquet_schema('https://urleng.glitch.me/test.parquet');
 ```
 
 ##### HTTP/S HEADERS
+When Authentication is enabled, you can pass headers and other parameters using _SECRETS_
+
 ```sql
 CREATE SECRET extra_http_headers (
     TYPE HTTP, 
@@ -70,6 +72,17 @@ CREATE SECRET extra_http_headers (
 	}
 );
 ```
+
+##### Native format
+
+You can also upload and attach a native DuckDB `.duckdb` database file and attach it to a read-only session
+```bash
+curl --data-binary @/path/to/myduck.db https://urleng.glitch.me/myduck.db
+```
+```sql
+ATTACH 'https://urleng.glitch.me/myduck.db' as remote; SELECT * FROM remote.table;
+```
+
 
 
 #### 📦 ClickHouse
