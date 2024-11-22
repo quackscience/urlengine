@@ -1,7 +1,6 @@
-<img src="https://github.com/user-attachments/assets/f8d31845-98c1-4f8e-b659-90c499818bc6" width=300 />
+<img src="https://github.com/user-attachments/assets/46a5c546-7e9b-42c7-87f4-bc8defe674e0" width=250 />
 
-
-# DuckDB URL Engine
+# DuckDB URL Storage Engine
 The URL Engine provides format agnostic remote storage for DuckDB/Clickhouse with hive-style partitioning.<br>
 
 ### Demo
